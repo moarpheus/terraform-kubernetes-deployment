@@ -14,10 +14,6 @@ terraform {
 
 data "terraform_remote_state" "eks" {
   backend = "local"
-
-  config = {
-    path = "../terraform-kubernetes-deployment/terraform.tfstate"
-  }
 }
 
 # Retrieve EKS cluster information
